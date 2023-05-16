@@ -1,1 +1,1 @@
-Fazendo repositório no git.
+Olá, esse arquivo é um projeto para minha aprendizagem, a cad nova descoberta eu estarei implementado nesse projeto :)
