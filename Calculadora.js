@@ -1,22 +1,28 @@
-let valor1 = 2;
-let valor2 = 10;
-let oper = "+";
+import entradaDados from 'readline-sync';
 
-function calculadora(oper, valor1, valor2) {
+let oper = entradaDados.question("Qual operacao vc deseja fazer (+) (-) (/) (*): ");
+let valor1 = entradaDados.question("Numero: ");
+let valor2 = entradaDados.question("Numero: ");
 
+function calSimples (oper, valor1, valor2) {
     switch (oper) {
-        case "+":
-            return valor1 + valor2;
         case "-":
-            return valor1 + valor2;
+            return valor1 - valor2;                
+            break;
+        case "+":
+            return Number(valor1) + Number(valor2);              
+            break;
         case "/":
-            return valor1 / valor2;
+            return  valor1 / valor2;             
+            break;
         case "*":
-            return valor1 * valor2;
+            return  valor1 * valor2;
+            break;
         default:
-            console.log("Insira uma opção");
-    }
-    
-}
+            console.log("Escolha uma opção!");
 
-console.log(calculadora(oper, valor1, valor2));
+    };
+    
+};
+
+console.log( "O resultado é: ", calSimples(oper, valor1, valor2));
