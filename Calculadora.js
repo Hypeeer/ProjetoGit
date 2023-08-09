@@ -1,8 +1,8 @@
 import entradaDados from 'readline-sync';
 
 let oper = entradaDados.question("Qual operacao vc deseja fazer (+) (-) (/) (*): ");
-let valor1 = entradaDados.question("Numero: ");
-let valor2 = entradaDados.question("Numero: ");
+let valor1 = entradaDados.question("Primeiro Numero: ");
+let valor2 = entradaDados.question("Segundo Numero: ");
 
 function calSimples (oper, valor1, valor2) {
     switch (oper) {
