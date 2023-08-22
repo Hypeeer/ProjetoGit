@@ -27,4 +27,4 @@ let valorDiesel = parseFloat(entrDados.question("Valor diesel atual? "));
 
 console.log("Total de KM: " + totalSoma);
 console.log("Total de combustivel para as rotas: " + qtsCobust);
-console.log("Gatos totais com combustivel: " + convert);
+console.log("Gastos totais com combustivel: " + consumoTotal);
